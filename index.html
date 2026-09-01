@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İstanbul Beyaz Eşya Teknik Servisi | Garanti Dışı Özel Servis</title>
+  <meta name="description" content="İstanbul genelinde garanti dışı beyaz eşya, kombi ve klima cihazlarına özel servis desteği. Hemen arayın veya WhatsApp’tan ulaşın.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <div class="brand-group">
+        <a href="#" class="brand-link" aria-label="Servis Merkezi Ana Sayfa">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <span class="wordmark">Servis Merkezi</span>
+        </a>
+        <div class="status-indicator-badge">
+          <span class="status-dot"></span>
+          <span>İstanbul’da servis planlaması</span>
+        </div>
+      </div>
+
+      <nav class="main-nav" id="mainNav" aria-label="Ana Navigasyon">
+        <ul class="nav-list">
+          <li><a href="#hizmetler" class="nav-link">Hizmetler</a></li>
+          <li><a href="#neden-biz" class="nav-link">Neden biz</a></li>
+          <li><a href="#surec" class="nav-link">Süreç</a></li>
+          <li><a href="#ozel-servis" class="nav-link">Özel servis</a></li>
+          <li><a href="#sss" class="nav-link">SSS</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/908503076492?text=Merhaba%2C%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn btn-teal-outline nav-whatsapp-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.49 0-2.95-.4-4.22-1.16l-.3-.18-3.13.82.84-3.05-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.25-8.22 8.25zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="tel:+908503076492" class="btn btn-signal-red header-call-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>Hemen ara</span>
+        </a>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="mainNav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        
+        <div class="hero-content">
+          <div class="eyebrow-tag">İstanbul genelinde özel servis desteği</div>
+          <h1 class="hero-title">Cihazınız bozulduysa, İstanbul’da <span class="text-highlight">bize ulaşın.</span></h1>
+          <p class="hero-description">
+            Buzdolabı, çamaşır makinesi, bulaşık makinesi, fırın, kombi ve klima için servis desteği veriyoruz. Cihazı kontrol eder, yapılacak işi ve ücretini siz onayladıktan sonra başlarız.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="tel:+908503076492" class="btn btn-signal-red btn-lg">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span>Servis için ara</span>
+            </a>
+            <a href="https://wa.me/908503076492?text=Merhaba%2C%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn btn-secondary-outline btn-lg">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.49 0-2.95-.4-4.22-1.16l-.3-.18-3.13.82.84-3.05-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.25-8.22 8.25zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+              <span>WhatsApp’tan yaz</span>
+            </a>
+          </div>
+
+          <div class="working-hours-note">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Hafta içi 08:00–21:00, hafta sonu 09:00–19:00. İlçenizi ve cihazın durumunu söyleyin, uygunluğu birlikte kontrol edelim.</span>
+          </div>
+
+          <div class="operational-facts-grid">
+            <div class="fact-item">
+              <span class="fact-lead">İstanbul</span>
+              <span class="fact-sub">Avrupa ve Anadolu Yakası</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-lead">6</span>
+              <span class="fact-sub">ana cihaz kategorisi</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-lead">Net</span>
+              <span class="fact-sub">onay öncesi bilgilendirme</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="image_f0334f.jpg" alt="Teknik servis ustasının çamaşır makinesinin arka motor ve elektrik bağlantılarını test etmesi" width="600" height="450" class="hero-img">
+            <div class="image-overlay-badges">
+              <span class="img-badge">Garanti dışı cihazlar</span>
+              <span class="img-badge">Onay öncesi bilgilendirme</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="service-strip" aria-label="Hizmet Kapsamı Özeti">
+      <div class="service-strip-inner">
+        <span class="strip-item strip-lead">Hizmet kapsamı</span>
+        <span class="strip-divider">·</span>
+        <span class="strip-item">Buzdolabı</span>
+        <span class="strip-divider">·</span>
+        <span class="strip-item">Çamaşır makinesi</span>
+        <span class="strip-divider">·</span>
+        <span class="strip-item">Bulaşık makinesi</span>
+        <span class="strip-divider">·</span>
+        <span class="strip-item">Fırın</span>
+        <span class="strip-divider">·</span>
+        <span class="strip-item">Kombi</span>
+        <span class="strip-divider">·</span>
+        <span class="strip-item">Klima</span>
+      </div>
+    </div>
+
+    <section class="section services-section" id="hizmetler">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">İstanbul’da tamir ettiğimiz cihazlar</h2>
+          <p class="section-subtitle">Cihaz türünü ve arıza belirtisini paylaşın. Servis uygunluğunu bulunduğunuz ilçeye göre birlikte netleştirelim.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <article class="service-card">
+            <div class="card-media">
+              <img src="image_efc28e.png" alt="Teknisyenin buzdolabı termostat ve soğutma kontrolü yapması" loading="lazy" width="400" height="260">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Buzdolabı</h3>
+              <p class="card-desc">Soğutmama, buzlanma, su birikmesi ve motor sorunlarında arıza kontrolü.</p>
+              <div class="card-symptoms">
+                <span class="symptom-tag">Soğutmuyor</span>
+                <span class="symptom-tag">Su akıtıyor</span>
+                <span class="symptom-tag">Ses yapıyor</span>
+              </div>
+              <a href="#talep-formu" class="card-action-link" data-device="Buzdolabı">
+                <span>Servis talebi oluştur</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-media">
+              <img src="image_efc2d1.jpg" alt="Teknisyenin çamaşır makinesi panel ve kazan mekanizmasını tamir etmesi" loading="lazy" width="400" height="260">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Çamaşır makinesi</h3>
+              <p class="card-desc">Su alma, boşaltma, sıkma, rulman, pompa ve kapak kilidi arızaları.</p>
+              <div class="card-symptoms">
+                <span class="symptom-tag">Sıkma yapmıyor</span>
+                <span class="symptom-tag">Gürültülü</span>
+                <span class="symptom-tag">Su boşaltmıyor</span>
+              </div>
+              <a href="#talep-formu" class="card-action-link" data-device="Çamaşır Makinesi">
+                <span>Servis talebi oluştur</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-media">
+              <img src="image_efc593.jpg" alt="Teknisyenin bulaşık makinesi filtre ve su tahliye pompasını kontrol etmesi" loading="lazy" width="400" height="260">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Bulaşık makinesi</h3>
+              <p class="card-desc">Isıtmama, iyi yıkamama, su boşaltmama ve programda kalma sorunları.</p>
+              <div class="card-symptoms">
+                <span class="symptom-tag">Temiz yıkamıyor</span>
+                <span class="symptom-tag">Su sızdırıyor</span>
+                <span class="symptom-tag">Isıtmıyor</span>
+              </div>
+              <a href="#talep-formu" class="card-action-link" data-device="Bulaşık Makinesi">
+                <span>Servis talebi oluştur</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-media">
+              <img src="image_efc5b5.jpg" alt="Teknisyenin avometre ile fırın rezistansı ve elektrik hattını ölçmesi" loading="lazy" width="400" height="260">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Fırın ve ankastre</h3>
+              <p class="card-desc">Isınmama, rezistans, termostat, kapak camı ve turbo fan problemleri.</p>
+              <div class="card-symptoms">
+                <span class="symptom-tag">Isınmıyor</span>
+                <span class="symptom-tag">Geç pişiriyor</span>
+                <span class="symptom-tag">Fan sesli</span>
+              </div>
+              <a href="#talep-formu" class="card-action-link" data-device="Fırın ve Ankastre">
+                <span>Servis talebi oluştur</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-media">
+              <img src="image_efc5d7.jpg" alt="Teknik servis ustasının kombi kart ve sıcak su ayarlarını kontrol etmesi" loading="lazy" width="400" height="260">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Kombi servisi</h3>
+              <p class="card-desc">Isıtma, sıcak su, basınç ve çalışma problemlerinde teknik kontrol.</p>
+              <div class="card-symptoms">
+                <span class="symptom-tag">Sıcak su yok</span>
+                <span class="symptom-tag">Basınç düşüyor</span>
+                <span class="symptom-tag">Isıtmıyor</span>
+              </div>
+              <a href="#talep-formu" class="card-action-link" data-device="Kombi">
+                <span>Servis talebi oluştur</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-media">
+              <img src="image_efc612.png" alt="Klima iç ünite ve dış ünite gaz-elektrik ölçüm kontrolü" loading="lazy" width="400" height="260">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Klima servisi</h3>
+              <p class="card-desc">Soğutmama, su akıtma, koku, ses ve performans sorunlarında bakım/onarım.</p>
+              <div class="card-symptoms">
+                <span class="symptom-tag">Soğutmuyor</span>
+                <span class="symptom-tag">Su akıtıyor</span>
+                <span class="symptom-tag">Koku yapıyor</span>
+              </div>
+              <a href="#talep-formu" class="card-action-link" data-device="Klima">
+                <span>Servis talebi oluştur</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-section" id="neden-biz">
+      <div class="container">
+        <div class="trust-panel-inner">
+          <div class="section-header text-light">
+            <h2 class="section-title">Önce arızayı anlarız, sonra ne yapılacağını söyleriz.</h2>
+            <p class="section-subtitle">Usta cihazı gördükten sonra sorunu ve seçenekleri açıklar. Siz onay vermeden ücretli bir işlem yapmayız.</p>
+          </div>
+
+          <div class="trust-facts-grid">
+            <div class="trust-fact-card">
+              <span class="t-fact-val">İstanbul</span>
+              <span class="t-fact-text">genelinde servis planlaması</span>
+            </div>
+            <div class="trust-fact-card">
+              <span class="t-fact-val">6</span>
+              <span class="t-fact-text">cihaz kategorisinde destek</span>
+            </div>
+            <div class="trust-fact-card">
+              <span class="t-fact-val">Net</span>
+              <span class="t-fact-text">onay öncesi bilgilendirme</span>
+            </div>
+            <div class="trust-fact-card">
+              <span class="t-fact-val">Özel</span>
+              <span class="t-fact-text">garanti dışı cihaz odağı</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="surec">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Servis nasıl ilerliyor?</h2>
+          <p class="section-subtitle">Bize ulaştığınızda cihazı ve bulunduğunuz ilçeyi öğrenir, uygun servis zamanını birlikte belirleriz.</p>
+        </div>
+
+        <div class="process-sequence">
+          
+          <div class="process-step">
+            <div class="step-num-box">01</div>
+            <h3 class="step-title">Bize ulaşırsınız</h3>
+            <p class="step-desc">Cihazın markasını, arıza belirtisini ve İstanbul’daki ilçenizi paylaşırsınız.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num-box">02</div>
+            <h3 class="step-title">Uygun zamanı konuşuruz</h3>
+            <p class="step-desc">Ekip planına göre tahmini servis zamanı hakkında bilgi veririz.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num-box">03</div>
+            <h3 class="step-title">Usta kontrol eder</h3>
+            <p class="step-desc">Cihazdaki sorunu, yapılabilecek işi ve maliyeti açıklarız.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-num-box">04</div>
+            <h3 class="step-title">Siz onay verirsiniz</h3>
+            <p class="step-desc">Onayınızdan sonra işlem yapılır ve cihaz tekrar kontrol edilir.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        
+        <div class="gallery-layout">
+          
+          <div class="gallery-image-col">
+            <figure class="gallery-fig">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="İki teknisyenin ev ortamında beyaz eşya onarımı yapması" loading="lazy">
+              <figcaption class="fig-badge">Yerinde kontrol ve onarım</figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery-image-col">
+            <figure class="gallery-fig">
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="Teknisyenin avometre ile parça ve elektrik bağlantı kontrolü yapması" loading="lazy">
+              <figcaption class="fig-badge">Parça ve bağlantı kontrolü</figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery-info-col">
+            <div class="workshop-note-panel">
+              <div class="note-tag">Servis Prensibi</div>
+              <h3 class="note-title">Marka bağımsız özel servis</h3>
+              <p class="note-text">Garanti süresi sona ermiş cihazlarda seçenekleri sizinle birlikte değerlendiriyoruz.</p>
+              <ul class="note-checklist">
+                <li>Orijinal ve uyumlu parça alternatifleri</li>
+                <li>Müdahale öncesi şeffaf tespit</li>
+                <li>Gereksiz parça değişiminden kaçınma</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section transparency-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Ne yapacağımızı baştan konuşuruz.</h2>
+          <p class="section-subtitle">Doğrulanmamış yorumlar yerine servis kapsamını, onay sürecini ve iletişim adımlarını açıkça gösteriyoruz.</p>
+        </div>
+
+        <div class="transparency-deck" id="transparencyDeck">
+          
+          <div class="deck-card active" data-deck-idx="0">
+            <div class="deck-card-top">
+              <span class="deck-badge">Açık fiyat iletişimi</span>
+              <span class="deck-tag">Onay öncesi</span>
+            </div>
+            <p class="deck-statement">“İşleme başlamadan önce yapılacak işi ve ücret bilgisini açıkça anlatıyoruz.”</p>
+          </div>
+
+          <div class="deck-card" data-deck-idx="1">
+            <div class="deck-card-top">
+              <span class="deck-badge">Marka bağımsız servis</span>
+              <span class="deck-tag">Garanti dışı</span>
+            </div>
+            <p class="deck-statement">“Garanti dışı cihazlarda seçenekleri ve parça alternatiflerini birlikte değerlendiriyoruz.”</p>
+          </div>
+
+          <div class="deck-card" data-deck-idx="2">
+            <div class="deck-card-top">
+              <span class="deck-badge">İstanbul servis planı</span>
+              <span class="deck-tag">İlçe bazlı</span>
+            </div>
+            <p class="deck-statement">“Telefon, WhatsApp veya form üzerinden cihaz türü ile ilçe bilgisini alıp planlama yapıyoruz.”</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section faq-section" id="sss">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Sık sorulanlar</h2>
+          <p class="section-subtitle">Servis işleyişi, garanti durumu ve randevu hakkında aklınıza takılabilecek konular.</p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-1" id="faq-btn-1">
+              <span class="faq-title">Garanti dışı cihazlara servis yapıyor musunuz?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" hidden>
+              <p>Evet. Çalışma alanımız üretici garanti süresi dolmuş veya garanti kapsamı dışında kalmış beyaz eşya, kombi ve klima cihazlarıdır.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-2" id="faq-btn-2">
+              <span class="faq-title">İstanbul’un hangi ilçelerine hizmet veriyorsunuz?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <p>İstanbul’un hem Avrupa hem de Anadolu Yakası’ndaki birçok ilçesine servis planlıyoruz. Günlük saha yoğunluğu ve usta güzergahına göre ilçe uygunluğunu aramanızda anında bildiriyoruz.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-3" id="faq-btn-3">
+              <span class="faq-title">Fiyatı ne zaman öğreniyorum?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-3" role="region" aria-labelledby="faq-btn-2" hidden>
+              <p>Usta yerinde fiziki ve elektriksel kontrolü yaptıktan sonra arızanın tam sebebini, gereken parçayı ve toplam maliyeti size iletir. Siz onay vermeden hiçbir ücretli tamir işlemine başlanmaz.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-4" id="faq-btn-4">
+              <span class="faq-title">Aynı gün servis mümkün mü?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <p>Bulunduğunuz ilçe ve arıza oluşturduğunuz saatteki servis aracı rotamıza göre aynı gün randevu planlanabilir. Bize telefon veya WhatsApp ile ulaştığınızda en yakın zaman dilimini netleştiririz.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-5" id="faq-btn-5">
+              <span class="faq-title">Üretici garantisi devam eden cihazlara bakıyor musunuz?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content" id="faq-ans-5" role="region" aria-labelledby="faq-btn-5" hidden>
+              <p>Cihazınızın faturası yeni veya resmi üretici garantisi halen devam ediyorsa, hak kaybı yaşamamanız adına öncelikle ilgili markanın yetkili servisine başvurmanızı tavsiye ederiz. Bağımsız özel servis müdahaleleri resmi garantiyi sonlandırabilir.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section notice-section" id="ozel-servis">
+      <div class="container">
+        
+        <div class="notice-card">
+          <div class="notice-header">
+            <span class="notice-flag">Yasal ve Operasyonel Şeffaflık</span>
+            <h2 class="notice-title">Garanti dışı cihazlara bakıyoruz.</h2>
+            <p class="notice-lead">
+              Yetkili servis değiliz. Marka bağımsız çalışan özel bir teknik servisiz; garanti dışı beyaz eşya, kombi ve klima cihazlarında arıza tespiti, bakım, onarım ve uygun parça değişimi desteği sunuyoruz.
+            </p>
+          </div>
+
+          <div class="notice-callout-box">
+            <strong>Garanti kapsamındaki cihazlar için:</strong> Öncelikle üreticinin yetkili servisine başvurmanızı öneririz. Özel servis müdahalesi garanti koşullarını etkileyebilir.
+          </div>
+
+          <div class="notice-points-grid">
+            <div class="n-point">
+              <span class="n-point-icon">✓</span>
+              <span>İstanbul genelinde servis planlaması</span>
+            </div>
+            <div class="n-point">
+              <span class="n-point-icon">✓</span>
+              <span>İşlemden önce açık bilgilendirme</span>
+            </div>
+            <div class="n-point">
+              <span class="n-point-icon">✓</span>
+              <span>Onayınıza göre parça seçenekleri</span>
+            </div>
+            <div class="n-point">
+              <span class="n-point-icon">✓</span>
+              <span>Yüksek maliyetli onarımı önceden belirtme</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section booking-section" id="talep-formu">
+      <div class="container">
+        
+        <div class="booking-wrapper">
+          <div class="booking-header">
+            <h2 class="booking-title">Cihazın başında kalıp uğraşmayın.</h2>
+            <p class="booking-subtitle">Adınızı, telefonunuzu, ilçenizi ve cihazdaki sorunu yazın. Uygun servis zamanını konuşmak için sizi arayalım.</p>
+          </div>
+
+          <div class="form-card-container">
+            
+            <form id="serviceBookingForm" class="booking-form" novalidate>
+              <div class="form-row">
+                
+                <div class="form-group">
+                  <label for="fullName">Ad Soyad <span class="required-star">*</span></label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Örn: Ahmet Yılmaz" required autocomplete="name">
+                  <span class="field-error" id="nameError">Lütfen adınızı ve soyadınızı giriniz.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Telefon Numarası <span class="required-star">*</span></label>
+                  <input type="tel" id="phone" name="phone" placeholder="05XX XXX XX XX" required autocomplete="tel">
+                  <span class="field-error" id="phoneError">Geçerli bir telefon numarası giriniz.</span>
+                </div>
+
+              </div>
+
+              <div class="form-row">
+                
+                <div class="form-group">
+                  <label for="district">Bulunduğunuz İlçe <span class="required-star">*</span></label>
+                  <input type="text" id="district" name="district" placeholder="Örn: Kadıköy, Beşiktaş, Ümraniye..." required>
+                  <span class="field-error" id="districtError">Lütfen ilçenizi belirtiniz.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="deviceCategory">Cihaz Türü <span class="required-star">*</span></label>
+                  <select id="deviceCategory" name="deviceCategory" required>
+                    <option value="" disabled selected>Seçiniz</option>
+                    <option value="Buzdolabı">Buzdolabı</option>
+                    <option value="Çamaşır Makinesi">Çamaşır Makinesi</option>
+                    <option value="Bulaşık Makinesi">Bulaşık Makinesi</option>
+                    <option value="Fırın ve Ankastre">Fırın ve Ankastre</option>
+                    <option value="Kombi">Kombi</option>
+                    <option value="Klima">Klima</option>
+                  </select>
+                  <span class="field-error" id="deviceError">Lütfen cihaz türünü seçiniz.</span>
+                </div>
+
+              </div>
+
+              <div class="form-group">
+                <label for="problemDescription">Arıza / Sorun Özeti <span class="required-star">*</span></label>
+                <textarea id="problemDescription" name="problemDescription" rows="3" placeholder="Cihazın markası ve yaşadığınız arıza belirtisini kısaca yazabilirsiniz..." required></textarea>
+                <span class="field-error" id="descError">Lütfen sorunu kısaca açıklayınız.</span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-signal-red btn-block" id="submitBtn">
+                  <span class="btn-text">Servis talebi gönder</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+              </div>
+
+              <div class="developer-note" role="note">
+                <small>Bilgi: Bu form doğrudan ön yüz etkileşimi olarak çalışmaktadır.</small>
+              </div>
+            </form>
+
+            <div id="formSuccessState" class="form-success-panel" role="status" aria-live="polite" hidden>
+              <div class="success-icon-box">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3 class="success-title">Talep kaydı tamamlandı</h3>
+              <p class="success-lead">Bilgilerinizi aldık.</p>
+              <p class="success-desc">Ekibimiz cihaz ve ilçe bilgilerinizi inceleyip uygun servis zamanı için sizi arayacak.</p>
+              
+              <div class="success-actions">
+                <a href="https://wa.me/908503076492?text=Merhaba%2C%20web%20sitenizden%20servis%20talebi%20g%C3%B6nderdim.%20Bilgilerimi%20WhatsApp'tan%20da%20payla%C5%9Fmak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn btn-teal">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.49 0-2.95-.4-4.22-1.16l-.3-.18-3.13.82.84-3.05-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.25-8.22 8.25zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+                  <span>WhatsApp’tan da yaz</span>
+                </a>
+                <button type="button" class="btn btn-secondary-outline" id="resetFormBtn">Yeni talep gönder</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      
+      <div class="footer-col footer-brand">
+        <div class="brand-link">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <span class="wordmark">Servis Merkezi</span>
+        </div>
+        <p class="footer-desc">İstanbul genelinde garanti dışı beyaz eşya, kombi ve klimalar için bağımsız özel teknik servis çözümleri.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Hizmet Alanları</h4>
+        <ul class="footer-links">
+          <li><a href="#hizmetler">Buzdolabı Tamiri</a></li>
+          <li><a href="#hizmetler">Çamaşır Makinesi Tamiri</a></li>
+          <li><a href="#hizmetler">Kombi ve Klima Servisi</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Hızlı İletişim</h4>
+        <ul class="footer-links contact-links">
+          <li>
+            <a href="tel:+908503076492" class="phone-link">
+              <span class="label">Telefon:</span>
+              <strong>0850 307 64 92</strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/908503076492?text=Merhaba%2C%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum." target="_blank" rel="noopener noreferrer" class="wa-link">
+              <span class="label">WhatsApp Hattı:</span>
+              <span>0850 307 64 92</span>
+            </a>
+          </li>
+          <li>
+            <span class="area-text"><strong>Bölge:</strong> İstanbul geneli; ekip planına göre hizmet verilen ilçeler.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="legal-note">Yetkili servis değildir; garanti dışı cihazlara bakan bağımsız özel teknik servistir.</p>
+        <p class="credit-note">Aslan Creative TR tarafından tasarlanmıştır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/908503076492?text=Merhaba%2C%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-fab" aria-label="WhatsApp'tan servis talebi yazın">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.49 0-2.95-.4-4.22-1.16l-.3-.18-3.13.82.84-3.05-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.25-8.22 8.25zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+    <span>WhatsApp’tan yaz</span>
+  </a>
+
+  <aside class="mobile-sticky-bar" aria-label="Mobil Hızlı İletişim">
+    <div class="mobile-bar-actions">
+      <a href="tel:+908503076492" class="btn btn-signal-red bar-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span>Hemen ara</span>
+      </a>
+      <a href="https://wa.me/908503076492?text=Merhaba%2C%20servis%20talebi%20olu%C5%9Fturmak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn btn-teal bar-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.49 0-2.95-.4-4.22-1.16l-.3-.18-3.13.82.84-3.05-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.25-8.22 8.25zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.23.9 2.43 1.03 2.6.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </aside>
+
+  <script src="main.js"></script>
+</body>
+</html>
