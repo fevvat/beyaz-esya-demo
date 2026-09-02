@@ -299,6 +299,14 @@ footer{background:var(--g-d);color:#9AA7B4;padding:clamp(46px,5.5vw,72px) 0 26px
   .burger{display:block;margin-left:auto;order:3}
   .hcall{order:2;margin-right:0}
   body.lock{overflow:hidden}
+
+  /* menü açıkken üst satır panelin üstünde ve okunur kalsın */
+  .logo,.hcall,.burger{position:relative;z-index:2}
+  body.lock .logo b{color:#fff}
+  body.lock .logo small{color:#8FA0AD}
+  body.lock .hcall{display:none}
+  body.lock .burger{background:transparent;border-color:rgba(255,255,255,.34);color:#fff}
+  body.lock .burger i{background:#fff}
 }
 @media (min-width:1281px){ nav .navcall{display:none} }
 
