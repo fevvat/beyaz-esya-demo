@@ -92,7 +92,8 @@ function servisDonusum(label,url){
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-b);font-size:16.5px;line-height:1.68;overflow-x:hidden}
+html,body{max-width:100%;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-b);font-size:16.5px;line-height:1.68}
 img{max-width:100%;display:block}
 a{color:inherit}
 h1,h2,h3,h4,h5{font-family:var(--f-h);margin:0;letter-spacing:-.022em;line-height:1.18}
@@ -127,7 +128,8 @@ section[id]{scroll-margin-top:92px}
 header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line);transition:box-shadow .3s}
 header.sh{box-shadow:0 8px 26px -22px rgba(22,34,44,.6)}
 .bar{display:flex;align-items:center;gap:20px;padding:12px 0;min-width:0}
-.logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex:none}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex:0 1 auto;min-width:0}
+.logo>span:last-child{min-width:0}
 .logo .mk{width:40px;height:40px;border-radius:10px;background:var(--g);display:grid;place-items:center;flex:none}
 .logo .mk svg{width:21px;height:21px;stroke:var(--gold-l)}
 .logo b{display:block;font-family:var(--f-h);font-weight:800;font-size:1.05rem;letter-spacing:-.03em;line-height:1.15}
@@ -314,6 +316,17 @@ footer{background:var(--g-d);color:#9AA7B4;padding:clamp(46px,5.5vw,72px) 0 26px
   body{padding-bottom:74px}
 }
 @media (max-width:620px){
+  :root{--shell:min(1220px, calc(100vw - 36px))}
+  .bar{gap:12px;padding:10px 0}
+  .logo .mk{width:36px;height:36px}
+  .logo .mk svg{width:19px;height:19px}
+  .logo small{display:none}
+  .logo b{font-size:1rem}
+  .hcall{padding:8px 12px;gap:7px}
+  .hcall b{font-size:.88rem}
+  .burger{width:42px;height:38px}
+  .cta{text-align:left}
+  .cta .btn{width:100%}
   .feats-g{grid-template-columns:1fr;transform:none;margin-top:26px}
   .feats{padding-bottom:34px}
   .spacer{display:none}
@@ -324,6 +337,16 @@ footer{background:var(--g-d);color:#9AA7B4;padding:clamp(46px,5.5vw,72px) 0 26px
   .fg{grid-template-columns:1fr}
   .hcall small{display:none}
   .hcall b{font-size:.9rem}
+}
+@media (max-width:400px){
+  :root{--shell:min(1220px, calc(100vw - 28px))}
+  .bar{gap:8px}
+  .logo b{font-size:.92rem}
+  .hcall{padding:8px 10px}
+  .hcall svg{display:none}
+  .hcall b{font-size:.83rem}
+  .callbar .btn{font-size:.9rem;padding-inline:8px}
+  h1{font-size:1.72rem}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
