@@ -34,9 +34,11 @@
      ============================================================ -->
 <script>
 window.ADS = {
-  tagId:     '',   // örn: 'AW-123456789'   (veya GA4 için 'G-XXXXXXX')
-  callLabel: '',   // telefon dönüşümü,  örn: 'AW-123456789/AbC-D_efGh'
-  formLabel: ''    // form dönüşümü,     örn: 'AW-123456789/XyZ-1_23kL'
+  tagId:     'AW-18417591677',
+  callLabel: 'AW-18417591677/fWVuCKL99e8cEP3KmM5E',
+  formLabel: '',                 // form için AYRI bir dönüşüm etiketi gerekiyor, henüz yok
+  value:     1.0,
+  currency:  'TRY'
 };
 (function(){
   if(!window.ADS.tagId) return;
@@ -51,8 +53,13 @@ function servisDonusum(label,url){
   var git=function(){ if(url) window.location=url; };
   if(!label||!window.gtag){ git(); return false; }
   var oldu=false, bir=function(){ if(!oldu){oldu=true;git();} };
-  setTimeout(bir,900);
-  gtag('event','conversion',{'send_to':label,'event_callback':bir});
+  setTimeout(bir,900);   // etiket takılırsa arama yine de başlasın
+  gtag('event','conversion',{
+    'send_to': label,
+    'value': window.ADS.value,
+    'currency': window.ADS.currency,
+    'event_callback': bir
+  });
   return false;
 }
 </script>
